@@ -1475,13 +1475,6 @@ function App() {
               e i dati andranno persi alla chiusura. Usa "Esporta backup" per salvarli su file.
             </div>
           )}
-          {state.modalita === "locale" && (
-            <div className="rounded-md border border-blue-200 bg-blue-50 px-4 py-2.5 text-xs text-blue-900">
-              💾 I dati vengono salvati automaticamente in questo browser, su questo computer, e li ritroverai
-              alla riapertura del file. Per passarli a un'altra persona usa Esporta/Importa backup nella scheda
-              "Rendiconto e stampa"; per lavorare in due contemporaneamente serve la versione condivisa su Claude.
-            </div>
-          )}
           {state.errore && (
             <div className="flex items-center justify-between rounded-md border border-red-300 bg-red-50 px-4 py-3 text-sm text-red-800">
               <span>⚠ {state.errore}</span>
